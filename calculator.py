@@ -7,13 +7,21 @@ def subtract(a, b):
 def multiply(a, b):
     return a * b
 
-def diviide(a, b):
+def divide(a, b):
     return a / b
+
+def powers(a, b):
+    b = int(b)
+    value = a
+    for i in range(b - 1):
+        value = value * a
+        i = i + 1
+    return value
 
 def main():
     while True:
         a = float(input("First number: "))
-        op = input("Operator (+ - * /): ")
+        op = input("Operator (+ - * / ^): ")
         b = float(input("Second number: "))
 
         if op == "+":
@@ -23,7 +31,9 @@ def main():
         elif op == "*":
             print("Result: ", multiply(a,b))
         elif op == "/":
-            print("Result: ", diviide(a,b))
+            print("Result: ", divide(a,b))
+        elif op == "^":
+            print("Result: ", powers(a,b))
         else:
             print("Unknown operator: ", op)
 
