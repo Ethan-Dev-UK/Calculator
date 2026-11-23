@@ -18,6 +18,12 @@ def powers(a, b):
         i = i + 1
     return value
 
+def circleArea(r):
+    if r >= 0:
+        return 3.14 * r * r
+    else:
+        return "NaN"
+
 def main():
     while True:
         a = float(input("First number: "))
