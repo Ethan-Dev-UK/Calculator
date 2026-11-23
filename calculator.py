@@ -24,6 +24,13 @@ def circleArea(r):
     else:
         return "NaN"
 
+def circleCircumference(d):
+    if d >= 0:
+        return 3.14 * d
+    else:
+        return "NaN"
+
+
 def main():
     while True:
         a = float(input("First number: "))
