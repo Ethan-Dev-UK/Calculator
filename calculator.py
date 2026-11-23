@@ -30,6 +30,12 @@ def circleCircumference(d):
     else:
         return "NaN"
 
+def triangleArea(b, h):
+    if (b > 0 and h > 0):
+        return 0.5 * b * h
+    else:
+        return "NaN"
+
 
 def main():
     while True:

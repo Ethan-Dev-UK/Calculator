@@ -1,4 +1,4 @@
-from calculator import add, subtract, multiply, divide, powers, circleArea
+from calculator import add, subtract, multiply, divide, powers, circleArea, circleCircumference, triangleArea
 
 def test_add():
     assert add(2, 3) == 5
@@ -22,3 +22,9 @@ def test_uneven_division():
 
 def test_circleArea():
     assert circleArea(-4) == "NaN"
+
+def test_circleCircumference():
+    assert circleCircumference(0) == 0
+
+def test_triangleArea():
+    assert triangleArea(5, 4) == 10
