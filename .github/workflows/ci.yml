@@ -3,7 +3,7 @@ name: Calculator CI
 on:
   pull_request:
     branches: main
-  python -m pytest -v
+  "3.11"
 
 permissions:
   contents: read
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the code
-        uses: "3.11"
+        uses: python -m pytest -v
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
